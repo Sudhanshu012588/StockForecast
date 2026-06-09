@@ -1,5 +1,5 @@
 
-import { ArrowRight, TrendingUp, BarChart3, Shield, Brain, Activity } from "lucide-react";
+import { ArrowRight, TrendingUp, BarChart3, Shield, Brain } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -21,7 +21,7 @@ export default function LandingPage() {
           </div>
 
           <button className="bg-[#ff9900] text-black px-4 py-2 font-bold">
-            Launch Terminal
+            Launch Terminal 
           </button>
 
         </div>
@@ -131,7 +131,7 @@ export default function LandingPage() {
 
             <div className="lg:col-span-3 p-6">
 
-              <div className="h-[500px] border border-[#2a2a2a] flex items-center justify-center text-zinc-500">
+              <div className="h-125 border border-[#2a2a2a] flex items-center justify-center text-zinc-500">
                 Trading Chart Preview
               </div>
 

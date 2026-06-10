@@ -26,10 +26,13 @@ export default function TradingChart({ data }: Props) {
   );
 
   const [hoverPrice, setHoverPrice] =
-    useState<number>();
+  useState<number | null>(null);
 
-  const [sl, setSl] = useState<number>();
-  const [tp, setTp] = useState<number>();
+const [sl, setSl] =
+  useState<number | null>(null);
+
+const [tp, setTp] =
+  useState<number | null>(null);
 
   useEffect(() => {
     if (!chartContainerRef.current) return;
@@ -123,7 +126,9 @@ export default function TradingChart({ data }: Props) {
             param.point.y
           );
 
-        setHoverPrice(price);
+        if (price !== null) {
+      setHoverPrice(Number(price));
+}
       }
     );
 
